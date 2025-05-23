@@ -241,5 +241,71 @@
       border-radius: 0.5rem;
       margin-left: 0.5rem;
     }
-    /*  */
+    /* footer*/
     
+    .footer {
+      background-color: #fff;
+      position: relative;
+      padding-bottom: 7rem;
+    }
+
+    .footer-wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .social-icons i {
+      font-size: 1.2rem;
+      color: #7d5fff;
+      margin-right: 1rem;
+      transition: 0.3s ease;
+    }
+
+    .social-icons i.active {
+      background-color: #ffeaa7;
+      padding: 0.5rem;
+      border-radius: 50%;
+    }
+
+    .contact-email {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #7d5fff;
+    }
+
+    .form-control::placeholder {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+    }
+
+    .send-btn {
+      background-color: #7d5fff;
+      color: white;
+      font-weight: bold;
+      border-radius: 1rem;
+      padding: 0.6rem 1.5rem;
+      border: none;
+      box-shadow: 0 4px 10px rgba(125, 95, 255, 0.3);
+    }
+
+    .send-btn:hover {
+      background-color: #654deb;
+    }
+
+    .form-icon {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #bbb;
+    }
+
+    .position-relative .form-control {
+      padding-right: 2.5rem;
+    }
