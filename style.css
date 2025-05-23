@@ -100,12 +100,15 @@
       font-size: 2.5rem;
       font-weight: 700;
       color: #2c2c2c;
+     
+    text-align: center ! important;
     }
 
     .hero-subtitle {
       font-size: 1.5rem;
       font-weight: 700;
       color: #2c2c2c;
+      text-align: center ! important;
     }
     /* grid */
     .icon{
@@ -136,6 +139,9 @@
       font-weight: bold;
       font-size: 1.2rem;
     }
+    h2{
+      text-align: center ! important;
+    }
 
     .bg-light-yellow {
       background-color: #fff7db;
@@ -151,6 +157,8 @@
       margin-bottom: 1rem;
       color: white;
       font-size: 1.5rem;
+      text-align: center ! important;
+      text-align: center ! important;
     }
 
     .icon-pink { background-color: #e91e63; }
