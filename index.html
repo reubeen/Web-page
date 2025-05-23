@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Grid Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white py-3 px-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <i class="fa-regular fa-table-cells"></i> Grid
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">How it works</a>
+        </li>
+        <span class="dot">•</span>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Who we are</a>
+        </li>
+        <span class="dot">•</span>
+        <li class="nav-item">
+          <a class="nav-link" href="#">What we do</a>
+        </li>
+        <span class="dot">•</span>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="d-none d-lg-block">
+      <a href="#" class="btn-signin">Sign In</a>
+    </div>
+  </div>
+</nav>
+<section class="hero-section">
+  <div class="hero-bg-shape"></div>
+  <div class="hero-dots">
+    <!-- 5x5 yellow dot grid -->
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+  </div>
+  <div class="container hero-text text-center">
+    <h1 class="hero-title">
+      Combine <span class="highlight-word"><span>fine</span></span> images
+    </h1>
+    <p class="hero-subtitle mt-2">To represent a product</p>
+  </div>
+<!-- grid -->
+ <div class="container py-5">
+  <div class="row g-4">
+    <!-- Left column (text + button) -->
+    <div class="col-lg-3 d-flex flex-column justify-content-between">
+      <div>
+        <p>Use mixed grid with imagery,<br> replace with your own photos<br> and descriptions</p>
+      </div>
+      <div>
+        <a href="#" class="btn btn-primary learn-more-btn">Learn more</a>
+      </div>
+    </div>
+
+    <!-- First tall image card -->
+    <div class="col-lg-2">
+      <div class="rounded-card">
+        <img src="assets/images/Card 1.png" class="img-fluid" alt="Card 1">
+        <div class="card-overlay"><br> </div>
+      </div>
+    </div>
+
+    <!-- Large center image -->
+    <div class="col-lg-3">
+      <div class="rounded-card">
+        <img src="/assets/images/Image.png" class="img-fluid" alt="Card 2">
+        <div class="card-overlay">Consider it done!</div>
+      </div>
+
+      <div class="row g-3 mt-3">
+        <div class="col-6">
+          <div class="rounded-card">
+            <img src="/assets/images/girl.png" class="img-fluid" alt="Card 3">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="rounded-card">
+            <img src="/assets/images/girl.png" class="img-fluid" alt="Card 4">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column (text + 3 stacked images) -->
+    <div class="col-lg-3 d-flex flex-column justify-content-between">
+      <p>This is multipurpose grid, it fits for<br> portfolio, services or agency web site</p>
+
+      <div class="rounded-card mb-3">
+        <img src="https://via.placeholder.com/200x150" class="img-fluid" alt="Card 5">
+      </div>
+
+      <div class="rounded-card mb-3">
+        <img src="https://via.placeholder.com/200x150" class="img-fluid" alt="Card 6">
+      </div>
+
+      <div class="rounded-card">
+        <img src="https://via.placeholder.com/200x150" class="img-fluid" alt="Card 7">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- icon cards -->
+ <div class="icon">
+ <div class="container py-5 text-center">
+  <h2 class="fw-bold mb-3">Delivering good designs since 1954 🚚💨</h2>
+  <p class="mb-5 fs-5 text-muted">
+    We’re the first multi-purpose design kit solutions for businesses.
+    We help you bridge gaps between your layouts, templates and developers to empower all involved.
+  </p>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="text-center">
+        <div class="icon-circle icon-pink">
+          <i class="fas fa-phone-volume"></i>
+        </div>
+        <h5 class="fw-bold">Support</h5>
+        <p class="text-muted">Delivering faster and more personalized support with shared screens and cool design systems for Figma</p>
+        <a href="#" class="btn-learn">Learn more</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="text-center">
+        <div class="icon-circle icon-blue">
+          <i class="fas fa-chart-pie"></i>
+        </div>
+        <h5 class="fw-bold">Sales growth</h5>
+        <p class="text-muted">Identify qualified customers with easy-to-use live chat messaging and AI-based Sales Bot</p>
+        <a href="#" class="btn-learn">Learn more</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="text-center">
+        <div class="icon-circle icon-purple">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <h5 class="fw-bold">Coponents-driven</h5>
+        <p class="text-muted">Delivering faster and more personalized support with shared screens and cool design systems for Figma</p>
+        <a href="#" class="btn-learn">Learn more</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col">
+      <div class="text-center">
+        <div class="icon-circle icon-green">
+          <i class="fas fa-thumbs-up"></i>
+        </div>
+        <h5 class="fw-bold">Swap the icon</h5>
+        <p class="text-muted">You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter</p>
+        <a href="#" class="btn-learn">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- pricing card -->
+ <section class="pricing-section">
+  <h2 class="fw-bold mb-2">Affordable pricing</h2>
+  <p class="text-muted mb-5">
+    Bill me <a href="#" class="text-primary fw-bold">monthly</a> • yearly
+  </p>
+
+  <div class="container">
+    <div class="row justify-content-center g-4">
+
+      <!-- Free Plan -->
+      <div class="col-md-4">
+        <div class="card p-4 h-100">
+          <p class="text-primary fw-bold">Like a pussy</p>
+          <h3 class="price">Free <span class="plan-label">/ forever</span></h3>
+          <ul class="list-unstyled my-4 text-start">
+            <li><i class="fas fa-check text-secondary check-icon"></i> Components-driven system</li>
+            <li><i class="fas fa-check text-secondary check-icon"></i> Sales-boosting landing pages</li>
+            <li><i class="fas fa-check text-secondary check-icon"></i> Awesome Feather icons pack</li>
+          </ul>
+          <a href="#" class="btn btn-outline-primary btn-pill">Try for free</a>
+        </div>
+      </div>
+
+      <!-- Individual Plan -->
+      <div class="col-md-4">
+        <div class="card p-4 h-100 best position-relative">
+          <p class="text-primary fw-bold">
+            <i class="fas fa-user"></i> Individual
+            <span class="badge-best">Best!</span>
+          </p>
+          <h3 class="price">$24 <span class="plan-label">/ month</span></h3>
+          <ul class="list-unstyled my-4 text-start">
+            <li><i class="fas fa-check text-yellow check-icon"></i> Components-driven system</li>
+            <li><i class="fas fa-check text-yellow check-icon"></i> Sales-boosting landing pages</li>
+            <li><i class="fas fa-check text-yellow check-icon"></i> Awesome Feather icons pack</li>
+            <li><i class="fas fa-check text-yellow check-icon"></i> Themed into 3 different styles</li>
+            <li><i class="fas fa-check text-yellow check-icon"></i> Will help to learn Figma</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-pill">Regular license</a>
+        </div>
+      </div>
+
+      <!-- Corporate Plan -->
+      <div class="col-md-4">
+        <div class="card p-4 h-100">
+          <p class="text-primary fw-bold">
+            <i class="fas fa-users"></i> Corporate
+          </p>
+          <h3 class="price">$12 <span class="plan-label">/ editor</span></h3>
+          <ul class="list-unstyled my-4 text-start">
+            <li><i class="fas fa-check text-green check-icon"></i> Components-driven system</li>
+            <li><i class="fas fa-check text-green check-icon"></i> Sales-boosting landing pages</li>
+            <li><i class="fas fa-check text-green check-icon"></i> Awesome Feather icons pack</li>
+            <li><i class="fas fa-check text-green check-icon"></i> Themed into 3 different styles</li>
+          </ul>
+          <a href="#" class="btn btn-outline-primary btn-pill">Extended license</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
